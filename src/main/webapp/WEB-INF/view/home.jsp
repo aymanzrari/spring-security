@@ -1,12 +1,12 @@
 <!DOCTYPE !>
 <html>
 	<head>
-	<title>Hello World</title>
+	<title>Luv2Code Company Home Page</title>
 	</head>
 	
 	<body>
-		<h2>Home page</h2>
-		
-		Welcome to the luv2code compant Home page !! 
+		<h2>Luv2code Company Home Page - Yoohoo !! Silly Goose </h2>
+		<hr>
+		Welcome to the luv2code company Home page !! 
 	</body>
-</html>
+</html> 
