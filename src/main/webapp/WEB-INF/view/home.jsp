@@ -1,5 +1,5 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+ <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 <!DOCTYPE !>
 <html>
 <head>
@@ -10,7 +10,22 @@
 	<h2>Luv2code Company Home Page - Yoohoo !! Silly Goose</h2>
 	<hr>
 	<p>Welcome to the luv2code company Home page !!</p>
-	
+	<hr>
+		<p>
+		 	Username :<security:authentication property="principal.username" />
+		 	<br><br>
+		 	Role(s) :<security:authentication property="principal.authorities" />
+		 </p>
+	<hr>
+		<p>
+			<a href="${pageContext.request.contextPath}/leaders">LeaderShip Meeting</a>
+				(Only For Manager Peps)
+		</p>
+		<p>
+			<a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+				(Only For Admin Peps)
+		</p>
+	<hr>	
 	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
 		<input type="submit" value="logout" />
 	</form:form>

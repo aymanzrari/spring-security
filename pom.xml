@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -26,18 +27,25 @@
 			<version>${springframework.version}</version>
 		</dependency>
 
-		<!-- Spring Security Web-->
+		<!-- Spring Security Web -->
 		<dependency>
-			  <groupId>org.springframework.security</groupId>
-			  <artifactId>spring-security-web</artifactId>
-			  <version>${springsecurity.version}</version>
-	   </dependency>
-	   
-		<!-- Spring Security Config-->
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+
+		<!-- Spring Security Config -->
 		<dependency>
-		  <groupId>org.springframework.security</groupId>
-		  <artifactId>spring-security-config</artifactId>
-		  <version>${springsecurity.version}</version>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+
+		<!-- Add spring security Taglibs support -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${springsecurity.version}</version>
 		</dependency>
 
 		<!-- Servlet, JSP and JSTL support -->
@@ -74,13 +82,13 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					  <groupId>org.apache.maven.plugins</groupId>
-					  <artifactId>maven-war-plugin</artifactId>
-					  <version>3.2.0</version>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>3.2.0</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
 
-	
+
 </project>
