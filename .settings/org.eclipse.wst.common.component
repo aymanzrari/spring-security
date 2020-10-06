@@ -27,6 +27,7 @@
         
         
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
                                                         
         
         
@@ -34,7 +35,7 @@
         
         
         <property name="java-output-path" value="/spring-security-demo-01-base-app/target/classes"/>
-        <property name="context-root" value="spring-security-demo"/>
+        <property name="context-root" value="spring-security-demo-2"/>
                                                     
     
     
